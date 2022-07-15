@@ -1,7 +1,8 @@
-const app = require('./app')
+// const crypto = require('crypto')
 
-const PORT = 4000
+const server = require('./server')
 
-app.listen(PORT, () => {
-  console.log(`Listening on Port: ${PORT}`)
+const PORT = 443
+server.listen(PORT, () => {
+  console.log(`Listening on http://localhost:${PORT}`)
 })
