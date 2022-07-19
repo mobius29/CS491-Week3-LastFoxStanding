@@ -19,3 +19,6 @@ Fox Finds Fox(FFF)
 ## 팁
 
 꽃게가 나와 춤을 출 때 착한 여우들은 모두 같은 춤을 따라 춥니다. 다른 행동을 하고 있는 나쁜 여우를 찾으세요
+
+##
+open source 게임 pixel dungeon의 sprite를 사용했습니다.
