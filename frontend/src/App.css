@@ -1,8 +1,10 @@
-.map-square {
+.App {
 	position: relative;
-	margin: 0 auto;
-	margin-top: 60px;
-	width: 800px;
-	height: 600px;
-	border: 1px solid black;
+}
+
+.unity {
+	position: absolute;
+	left: 8%;
+	width: 1280px;
+	height: 720px;
 }
