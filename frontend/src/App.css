@@ -1,6 +1,10 @@
+.App {
+	position: relative;
+}
+
 .unity {
-	margin: 0 auto;
-	margin-top: 60px;
+	position: absolute;
+	left: 8%;
 	width: 1280px;
 	height: 720px;
 }

@@ -10,11 +10,11 @@ let socket_hashmap = new HashMap()
 
 const max_client_count = 3
 const random_motion_count = 3
-const random_motion_start = 5
-const random_motion_during = 6
+const random_motion_start = 20
+const random_motion_during = 11
 const game_start_countdown = 3
 const die_count = 3
-const npc_count = 4
+const npc_count = 40
 
 let count = 0 // 1초동안 들어온 소켓의 개수 저장.
 let client_count = 0 // 서버에 들어온 소켓의 수 저장.
@@ -109,6 +109,11 @@ wss.on('connection', (ws) => {
   const socket_id = client_id++
   client_count++
   socket_hashmap.set(socket_id, ws) // socket id를 hashmap에 저장
+
+  if (client_count > max_client_count) {
+    --client_count
+    return
+  }
 
   flag_info[socket_id.toString()] = 0
   for (let i = 0; i < npc_count; ++i) {
